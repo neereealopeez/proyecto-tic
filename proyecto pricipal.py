@@ -8,7 +8,7 @@ def main(page: ft.Page):
     t =ft.Text(value="INFOVIP", color="#6F82EB",size=30)
     page.add(t)
     
-    botonRegistrar =ft.ElevatedButton(text="Registrar")
+    botonRegistrar =ft.ElevatedButton(text="Reg  istrar")
     page.add(botonRegistrar)
     
 
