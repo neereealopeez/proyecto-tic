@@ -3,6 +3,8 @@ import flet as ft
 def main(page: ft.Page):
     page.title="InfoVIP"
 
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+
     page.bgcolor="#DDE3FF"
 
 
