@@ -1,10 +1,13 @@
 import flet as ft
 
 def main(page: ft.Page):
+  
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+
     page.title="InfoVIP"
     page.bgcolor="#DDE3FF"
-    img = ft.Image(src=f"esto no se ve", width=300, height=300)
-    img.src = "imagen.png"
+    img = ft.Image(src=f"esto no se ve", width=200, height=200)
+    img.src = "imagen2.png"
     page.add(img)
     t =ft.Text(value="INFOVIP", color="#6F82EB",size=30, font_family="Times New Roman")
     page.add(t)
@@ -29,7 +32,7 @@ def main(page: ft.Page):
         vDatos = cargarFichero()
         print(vDatos)
         #Comprobar que coincidan los datos
-        0
+        
 
 
     botonRegistrar =ft.ElevatedButton(text="Registrar", icon="Login",on_click=comprobar_login)
