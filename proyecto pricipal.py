@@ -30,6 +30,10 @@ def main(page: ft.Page):
         if (vUsus.count(usuario) > 0) and (vUsus.count(password) > 0):
             print ("usuario en lista")
             page.clean()
+            imgcargar = ft.Image(src=f"esto no se ve", width=100, height=600)
+            imgcargar.src = "cargar.gif"
+            page.add(imgcargar)
+
 
         else:
             dlg= ft.AlertDialog(title=ft.Text(f"Usuario y/o contraseña incorrectos. Te quedan {textField_Intentos.value} intentos."))
@@ -51,10 +55,9 @@ def main(page: ft.Page):
     textField_Intentos= ft.TextField(value=3)
     botonRegistrar =ft.FilledButton(text="Registrar", icon="Login",on_click=comprobar_login)
     botonRegistrar.bgcolor="#0F0648"
-    fotos= ft.Container(
-    content= ft.Image(src=f"esto no se ve", width=30, height=30)
-        fotos.src = "instagram.png")
-    page.add(img,textField_Usuario, textField_Contraseña, botonRegistrar, texto, imginstagram, imgtw, imgfb)
+    imgtotal = ft.Image(src=f"esto no se ve", width=250, height=75)
+    imgtotal.src= "total.png"
+    page.add(img,textField_Usuario, textField_Contraseña, botonRegistrar, texto, imgtotal)
 
     
 
