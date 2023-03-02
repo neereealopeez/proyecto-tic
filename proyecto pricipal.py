@@ -51,7 +51,10 @@ def main(page: ft.Page):
     textField_Intentos= ft.TextField(value=3)
     botonRegistrar =ft.FilledButton(text="Registrar", icon="Login",on_click=comprobar_login)
     botonRegistrar.bgcolor="#0F0648"
-    page.add(img,textField_Usuario, textField_Contraseña, botonRegistrar, texto)
+    fotos= ft.Container(
+    content= ft.Image(src=f"esto no se ve", width=30, height=30)
+        fotos.src = "instagram.png")
+    page.add(img,textField_Usuario, textField_Contraseña, botonRegistrar, texto, imginstagram, imgtw, imgfb)
 
     
 
